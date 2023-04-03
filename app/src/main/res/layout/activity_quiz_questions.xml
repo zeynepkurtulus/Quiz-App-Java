@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/questionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#848482"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            tools:text="Which Country Does This Flag Belong To ?"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            tools:src="@drawable/italy">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="6"
+                android:minHeight="50dp"
+                android:progress="0">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/questionId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="14sp"
+                tools:text="0/9">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/opt1"
+            android:textSize="20dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="#003262"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            tools:text="Option 1"
+            android:gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/opt2"
+            android:background="@drawable/default_option_border_bg"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            tools:text="Option 2"
+            android:textColor="#003262"
+            android:gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/opt3"
+            android:background="@drawable/default_option_border_bg"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            tools:text="Option 3"
+            android:textColor="#003262"
+            android:gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/opt4"
+            android:textSize="20dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            tools:text="Option 4"
+            android:textColor="#003262"
+            android:gravity="center">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+</ScrollView>
